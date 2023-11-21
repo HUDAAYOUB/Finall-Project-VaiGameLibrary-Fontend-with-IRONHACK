@@ -146,9 +146,7 @@ export class ProfileComponent implements OnInit {
     this.userService.updateGame(this.userId, userGame.game.id, userGame.editUserRating, userGame.editUserOpinion, userGame.editStatus)
       .subscribe({
         next: (response: any) => {
-          // console.log('Game updated successfully:', response);
-          // this.loadProfileAndGames();
-          
+    
         userGame.editMode = false; 
         userGame.editUserRating = null;
         userGame.editUserOpinion = '';
