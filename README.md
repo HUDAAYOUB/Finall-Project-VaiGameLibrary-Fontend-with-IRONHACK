@@ -7,9 +7,7 @@
 
 - [Overview](#overview)
 - [Features](#features)
-
-- [Code Structure](#code-structure)
-- [Components](#components)
+- [Code Structure-Components](#code-structure-components)
 - [Configuration](#configuration)
 - [Contact](#contact)
 - [Resources](#resources)
@@ -20,8 +18,7 @@
 Welcome to the Game Library Code Project! This Java Spring Boot application is designed to manage and organize video game information. Users can create profiles, explore and manage their game collections, and interact with the gaming community.
 
 🏗️
-### Components:
-### Code Structure: 
+### Code Structure-Components: 
 
 The project is structured into several components, each serving a specific purpose:
 
@@ -80,4 +77,4 @@ For inquiries and support, please contact [Huda Ayoub] at [huda3ya@gmail.com].
 ##  Installation
 ```
    ```bash
-   git clone https://github.com/your-username/angular-gaming-app.git
+   git clone https://github.com/HUDAAYOUB/Finall-Project-VaiGameLibrary-Fontend-with-IRONHACK.git
