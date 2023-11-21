@@ -1,28 +1,63 @@
-# FinalProject
+# Game Library Code Project 🎮
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
+## Overview 🌐
 
-## Development server
+Welcome to the Game Library Code Project! This Java Spring Boot application is designed to manage and organize video game information. Users can create profiles, explore and manage their game collections, and interact with the gaming community.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Project Structure 🏗️
 
-## Code scaffolding
+The project is structured into several components, each serving a specific purpose:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Components:
 
-## Build
+- **Home Component (`home.component`):**
+  - Serves as the focal point for the application's home page.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Games Component (`games.component`):**
+  - Displays a comprehensive list of available games.
+  - Offers search and pagination features for user convenience.
 
-## Running unit tests
+- **Create Game Component (`create-game.component`):**
+  - Facilitates the addition of new games to the collection through a user-friendly form.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Profile Component (`profile.component`):**
+  - Showcases user profiles and empowers users to manage their game collections effortlessly.
 
-## Running end-to-end tests
+- **Single Games Component (`single-games.component`):**
+  - Presents in-depth information about a specific game.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **User Component (`user.component`):**
+  - Highlights individual user pages, providing a detailed view of user information.
 
-## Further help
+- **Search Component (`search.component`):**
+  - Enables users to perform targeted searches for specific games.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# Finall-Project-VaiGameLibrary-Fontend-with-IRONHACK
+- **User Game Component (`user-game.component`):**
+  - Displays user details along with a list of games associated with that user.
+
+- **New User Component (`new-user.component`):**
+  - Facilitates user registration, allowing the creation of new accounts.
+
+- **Add Game Component (`add-game.component`):**
+  - Provides a streamlined form for users to add games to their profiles.
+
+- **Sign-In Component (`sign-in.component`):**
+  - Offers a simple and intuitive sign-in form for user authentication.
+
+### Additional Components:
+
+- **Navbar Component (`navbar.component`):**
+  - Enhances navigation with a user-friendly bar for quick access to different sections.
+
+- **Header Component (`header.component`):**
+  - Forms the header section of the application.
+
+- **Footer Component (`footer.component`):**
+  - Concludes the application with an informative footer section.
+
+## Installation 🚀
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/angular-gaming-app.git
