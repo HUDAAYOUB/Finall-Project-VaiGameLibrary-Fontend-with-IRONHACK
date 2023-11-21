@@ -1,0 +1,44 @@
+<!-- app.component.html -->
+<header></header>
+<div class="background-layers">
+  <!-- Your background image -->
+  
+  <img src="assets/img/background.png" alt="Background Image">
+  
+  <main>
+
+  </main>
+  <!-- Welcome container content -->
+  <div class="welcome-container">
+      <h1>Welcome to VAI Games </h1>
+      <p>Discover, explore, and enjoy a vast collection of games from various genres.</p>
+      <p>Whether you're a casual gamer or a hardcore enthusiast, there's something for everyone.</p>
+  <br><br>
+  <br><br>
+  <br><br>
+      <a routerLink="/games">
+        <img src="assets\img\dragon card - front (3).png" alt="Games" style="width: 205px; height: auto; flex-shrink: 0;">
+      </a>
+      <!-- <a routerLink="/user" class="user">
+        <img src="assets/img/knight card (2).png" alt="user" style="width: 205px; height: auto; flex-shrink: 0;">
+      </a> -->
+      
+      <a routerLink="/Register">
+        <img src="assets\img\hammer card (1).png" alt="Games" style="width: 205px; height: auto; flex-shrink: 0;">
+        </a>
+
+<a routerLink="/signin" routerLinkActive="active">
+  <img src="assets\img\mage card (4).png" alt="Games" style="width: 205px; height: auto; flex-shrink: 0;">
+</a>
+
+<a *ngIf="!currUsername" routerLink="profile/:userId/:games/:id" mat-button color="primary" routerLinkActive="active">
+ 
+</a>
+
+<a *ngIf="currUsername" [routerLink]="['profile/' + currUserId]" routerLinkActive="active">
+  <img src="assets\img\knight card (3).png" alt="Games" style="width: 205px; height: auto; flex-shrink: 0;">
+</a>
+
+ 
+</div>
+<app-footer></app-footer>

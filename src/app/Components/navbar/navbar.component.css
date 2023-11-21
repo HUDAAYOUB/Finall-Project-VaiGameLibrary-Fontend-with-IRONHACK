@@ -1,0 +1,44 @@
+/* navbar.component.css */
+nav {
+  background-color:rgba(12,18,34,255); /* Set the background color as needed */
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.flex-container {
+  list-style-type: none;
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+
+  justify-content: space-around; /* Adjust the spacing as needed */
+  align-items: center;
+}
+
+.flex-container li {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.flex-container a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+
+  text-decoration: none;
+  color: white; /* Set the text color as needed */
+}
+
+.flex-container img {
+  margin-bottom: 5px; 
+  font-family: 'Times New Roman', Times, serif;
+  /* Adjust the margin as needed */
+}
+
+.flex-container a:hover {
+  text-decoration: underline;
+  font-family: 'Times New Roman', Times, serif;
+   /* Add underline on hover if desired */
+}

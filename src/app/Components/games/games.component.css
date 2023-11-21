@@ -1,0 +1,213 @@
+/* styles.css or your component-specific stylesheet */
+
+/* Common styles for background and image */
+.background-layers {
+  position: relative;
+  width: 100vw;
+  max-width: 1800px;
+  margin: 0 auto;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #1c1c1c;
+  overflow-y: auto;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Game list styles */
+.content-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+li {
+  flex: 0 0 calc(33.333% - 10px);
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.game-item {
+  width: 200%;
+  background-color: #f8f8f82a;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  
+  overflow: hidden;
+}
+
+.game-item h3 {
+  color: #ffd782;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.game-item a {
+  text-decoration: none;
+  color: rgba(25, 64, 43, 255);
+  display: block;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.game-item a:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.game-image {
+  width: 200px;
+  height: 200px;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 5px;
+}
+
+.game-item button {
+  display: block;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 10px auto 0;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  background-color: rgba(25, 64, 43, 255);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.game-item button:hover {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgba(25, 64, 43, 255);
+}
+
+/* Hover effect on h3 */
+.game-item h3:hover {
+  font-family: 'Times New Roman', Times, serif;
+  color: rgba(25, 64, 43, 255);
+}
+
+/* Pagination styles */
+.pagination-container {
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 8px;
+  cursor: pointer;
+  background-color: rgba(25, 64, 43, 255);
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  font-family: 'Times New Roman', Times, serif;
+
+  background-color: rgba(12, 18, 34, 255);
+}
+
+button[disabled] {
+  font-family: 'Times New Roman', Times, serif;
+
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Search input styles */
+.search-container {
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-label {
+  font-size: 26px;
+  margin-right: 10px;
+  color: #cd4f38;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Additional styling for the input on focus */
+input:focus {
+  outline: none;
+  font-family: 'Times New Roman', Times, serif;
+
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.custom-mat-form-field {
+  /* Add your styles for the mat-form-field here */
+  width: 30%;
+  height: 30%;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.search-label {
+  /* Add your styles for the mat-label here */
+  color: #333333; /* Example color */
+  height: 200%;
+  width: 200%;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.custom-input {
+  /* Add your styles for the input here */
+  border: 1px solid #362e2e; /* Example border */
+  padding: 8px; /* Example padding */
+  width: 70%;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+.h3
+{
+font-size: 20;
+font-family: 'Times New Roman', Times, serif;
+
+}

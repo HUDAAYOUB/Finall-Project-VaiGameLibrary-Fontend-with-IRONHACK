@@ -1,0 +1,31 @@
+<!-- games.component.html -->
+<app-navbar></app-navbar>
+<div class="background-layers">
+  <!-- Your background image -->
+  <img src="assets/img/background.png" alt="Background Image" class="background-image">
+
+  <div class="content-container">
+    <div class="search-container">
+    </div><mat-form-field appearance="fill" class="custom-mat-form-field">
+      <mat-label class="search-label">Search by title...</mat-label>
+      <input matInput type="text" [(ngModel)]="searchTerm" (input)="applyFilter()" placeholder="Enter game title..." class="custom-input">
+    </mat-form-field>
+    
+
+    <ul>
+      <li *ngFor="let game of visibleGames" class="game-item">
+        <a [routerLink]="['/game', game.id]">
+          <h3>{{ game.title }}</h3>
+        </a>
+        <img [src]="game.imageUrl" alt="{{ game.title }} Image" class="game-image">
+      </li>
+    </ul>
+
+    <div class="pagination-container">
+      <button (click)="prevPage()" [disabled]="p === 1">Previous</button>
+      {{ p }} / {{ totalPages }}
+      <button (click)="nextPage()" [disabled]="p === totalPages">Next</button>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

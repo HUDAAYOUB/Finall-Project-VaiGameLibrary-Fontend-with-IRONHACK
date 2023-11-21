@@ -1,0 +1,134 @@
+/* styles.css */
+/* styles.css or your component-specific CSS */
+.header {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #3a6241; /* Set your desired background color */
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.background-layers {
+    position: relative;
+    width: 100vw;
+    max-width: 1800px;
+    margin: 0 auto;
+    height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+
+    overflow: hidden;
+}
+
+.background-layers img {
+    width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+
+    height: 100%;
+    object-fit: cover;
+}
+
+.welcome-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  font-family: 'Times New Roman', Times, serif;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    color: var(--ffffff, #FFF);
+    text-align: top;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+  font-family: 'Times New Roman', Times, serif;
+
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+
+.user-card {
+    width: 200px;
+  font-family: 'Times New Roman', Times, serif;
+
+    height: 300px;
+    border-radius: 80px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.user-card img {
+  font-family: 'Times New Roman', Times, serif;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 80px;
+    filter: brightness(80%);
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.04), 0px 2px 6px 0px rgba(146, 92, 180, 0.08), 0px 16px 24px 0px rgba(146, 92, 180, 0.10), 0px 24px 32px 0px rgba(146, 92, 180, 0.14);
+}
+/* styles.css */
+
+.background-layers {
+    position: relative;
+    width: 100vw;
+  font-family: 'Times New Roman', Times, serif;
+
+    max-width: 1800px;
+    margin: 0 auto;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-layers img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.welcome-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  font-family: 'Times New Roman', Times, serif;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #3a6241;
+}
+
+h1 {
+    color: var(--ffffff, #3a6241);
+    text-align: top;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+.game-card,
+.user-card {
+  width: 205px;
+  height: auto;
+  font-family: 'Times New Roman', Times, serif;
+
+  flex-shrink: 0;
+}
+

@@ -1,0 +1,24 @@
+login.component.html 
+ <app-navbar></app-navbar>
+<div class="background-layers">
+  <img src="assets/img/background.png" alt="Background Image" class="background-image">
+  <div class="custom-container">
+    <div class="login">
+      <h1>Welcome Back</h1>
+      <form (ngSubmit)="login()" [formGroup]="loginForm"> 
+        <label>Username:</label>
+        <mat-form-field>
+          <input type="text" placeholder="Username..." formControlName="username" />
+        </mat-form-field>
+        <label>Password:</label>
+        <mat-form-field>
+          <input type="password" placeholder="Password..." formControlName="password" />
+        </mat-form-field>
+        <button type="submit" [disabled]="loginForm.invalid">
+          <img src="assets/img/gaming-console.png" alt="Gaming Console" height="40" width="40">
+        </button>
+      </form> 
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,59 @@
+<!-- newuser.component.html -->
+<app-navbar></app-navbar>
+<div class="background-layers">
+  <!-- Your background image -->
+  <img src="assets/img/background.png" alt="Background Image" class="background-image">
+
+  <div class="custom-container">
+    <form [formGroup]="registerForm">
+      <!-- Step 1 -->
+      <div class="form-step" *ngIf="step === 1">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Username..." formControlName="username" />
+        <div *ngIf="registerForm.get('username')?.invalid && registerForm.get('username')?.touched" class="error-msg">
+          Username is required
+        </div>
+        <a *ngIf="step < 4 && !registerForm.get('username')?.invalid" (click)="nextStep()" class="nav-link">
+          <img src="assets/img/star.png" alt="Next" width="30" height="40"/>
+        </a>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="form-step" *ngIf="step === 2">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Name..." formControlName="name" />
+        <div *ngIf="registerForm.get('name')?.invalid && registerForm.get('name')?.touched" class="error-msg">
+          Name is required
+        </div>
+        <a *ngIf="step < 4 && !registerForm.get('name')?.invalid" (click)="nextStep()" class="nav-link">
+          <img src="assets/img/star.png" alt="Next" width="30" height="40"/>
+        </a>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="form-step" *ngIf="step === 3">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Email..." formControlName="email" />
+        <div *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched" class="error-msg">
+          Enter a valid email address
+        </div>
+        <a *ngIf="step < 4 && !registerForm.get('email')?.invalid" (click)="nextStep()" class="nav-link">
+          <img src="assets/img/star.png" alt="Next" width="30" height="40" />
+        </a>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="form-step" *ngIf="step === 4">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Password..." formControlName="password" />
+        <div *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched" class="error-msg">
+          Password must be at least 6 characters
+        </div>
+        <a *ngIf="!registerForm.invalid" (click)="onSubmit()" class="nav-link">
+          <img src="assets/img/star.png" alt="Submit" width="30" height="40" />
+        </a>
+      </div>
+    <!-- </form> -->
+  </form></div>
+</div>
+<app-footer></app-footer>

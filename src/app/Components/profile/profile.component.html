@@ -1,0 +1,117 @@
+<app-navbar></app-navbar>
+
+<div class="background-layers">
+  <img src="assets/img/background.png" alt="Background Image" class="background-image">
+
+  <div class="user-profile-container">
+    <div *ngIf="user" class="user-profile">
+      <div class="profile-header">
+        <img src="\assets\img\ghost.png" alt="Icon" class="header-icon">
+        <h2>{{ currUsername}}'s Profile</h2>
+      </div>
+      <div>
+        <mat-form-field>
+          <mat-label>Select Game</mat-label>
+          <mat-select [(ngModel)]="selectedGame" name="selectedGame">
+            <mat-option *ngFor="let game of availableGames" [value]="game">
+              {{ game.title }}
+            </mat-option> 
+           </mat-select>
+        </mat-form-field> 
+
+        <div *ngIf="selectedGame" class="game-rating">
+          <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+          <mat-form-field>
+            <mat-label>User Opinion</mat-label>
+            <input matInput [(ngModel)]="userOpinion" name="userOpinion" required>
+          </mat-form-field> 
+
+          <mat-form-field>
+            <mat-label>User Rating</mat-label>
+            <input matInput type="number" [(ngModel)]="selectedRating" name="selectedRating" required>
+          </mat-form-field> 
+
+          <mat-form-field>
+            <mat-label>Status</mat-label>
+            <mat-select [(ngModel)]="selectedStatus" name="selectedStatus">
+              <mat-option *ngFor="let status of gameStatusOptions" [value]="status">
+                {{ getStatusText(status) }}
+           </mat-option>
+            </mat-select>
+          </mat-form-field> 
+
+
+<div class="button-container">
+  <div class="icon-button">
+    <button mat-icon-button (click)="addGameToUser()">
+      <img src="assets/img/game (2).png" alt="Game Icon">
+    </button>
+  </div>
+</div>
+
+
+      
+      </div>
+    </div>
+
+    <div *ngIf="user.userGame" class="game-info">
+      <div *ngFor="let userGame of user.userGame" class="game-card">
+        <div class="game-details">
+          <img *ngIf="userGame.game.imageUrl" [src]="userGame.game.imageUrl" alt="Game Image">
+          <p><strong>Game Title:</strong> {{ userGame.game.title }}</p>
+          <p><strong>Release Year:</strong> {{ userGame.game.releaseYear }}</p>
+        </div>
+        <div class="user-rating">
+          <p><strong>User Rating:</strong> {{ userGame.userRating }}</p>
+          <p><strong>User Opinion:</strong> {{ userGame.userOpinion }}</p>
+          <p><strong>Status:</strong> {{ userGame.status }}</p>
+
+        
+
+<div *ngIf="!userGame.editMode" class="edit-button-container">
+  <button mat-icon-button (click)="userGame.editMode = true; userGame.editUserOpinion = userGame.userOpinion; userGame.editUserRating = userGame.userRating; userGame.editStatus = userGame.status;">
+    <img src="assets/img/reload.png" alt="Reload Icon">
+  </button>
+</div><div class="delete-button-container">
+  <button mat-icon-button color="warn" (click)="deleteGame(userGame.game.id)">
+    <img src="assets/img/trash-bin.png" alt="Trash Bin Icon">
+  </button>
+</div>
+
+
+          <div *ngIf="userGame.editMode">
+            <mat-form-field>
+              <mat-label>User Opinion</mat-label>
+              <input matInput [(ngModel)]="userGame.editUserOpinion" name="userOpinion" required>
+            </mat-form-field>
+
+            <mat-form-field>
+              <mat-label>User Rating</mat-label>
+              <input matInput type="number" [(ngModel)]="userGame.editUserRating" name="userRating" required>
+            </mat-form-field>
+
+            <mat-form-field>
+              <mat-label>Status</mat-label>
+              <mat-select [(ngModel)]="userGame.editStatus" name="status">
+                <mat-option *ngFor="let status of gameStatusOptions" [value]="status">
+                  {{ getStatusText(status) }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+            <button mat-raised-button color="primary" (click)="updateGameDetails(userGame)">Save</button>
+            <button mat-raised-button color="warn" (click)="userGame.editMode = false">Cancel</button>
+          </div>
+
+
+
+          
+
+      </div>
+ </div></div></div></div></div>
+ 
+
+ <div class="footer">
+ <app-footer></app-footer>
+ </div>

@@ -1,0 +1,29 @@
+<!-- single-games.component.html -->
+<app-navbar></app-navbar>
+
+<section class="background-layers">
+  <!-- Your background image -->
+  <img src="assets/img/background.png" alt="Background Image" class="background-image">
+
+  <div class="custom-container">
+    <div *ngIf="gameModel" class="center-image">
+      <img [src]="gameModel.imageUrl" alt="Game Image">
+    </div>
+
+    <div *ngIf="gameModel" class="game-item">
+      <h3>{{ gameModel.title }}</h3>
+      <div class="details">
+        <ul>
+          <li><strong>Release Year:</strong> {{ gameModel.releaseYear }}</li>
+          <li><strong>Genre:</strong> {{ gameModel.genre }}</li>
+          <li><strong>Platform:</strong> {{ gameModel.platform }}</li>
+          <li><strong>Description:</strong> {{ gameModel.description }}</li>
+          <li><strong>Rating:</strong> {{ gameModel.rating }}</li>
+          <li><strong>Mode:</strong> {{ gameModel.mode }}</li>
+        </ul>
+ 
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

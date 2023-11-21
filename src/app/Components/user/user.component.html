@@ -1,0 +1,26 @@
+<!-- user.component.html -->
+<!-- <app-navbar></app-navbar> -->
+
+<section class="background-layers">
+  <!-- Your background image -->
+  <img src="assets/img/background.png" alt="Background Image" class="background-image">
+
+  <div class="custom-container">
+    <section class="user-list">
+      <div *ngFor="let user of users" class="user-item">
+        <!-- User Icon (Image) -->
+        <img src="\assets\img\ghost.png" alt="Icon" height="20" width="30">
+
+        <!-- User Information -->
+        <div>
+          <!-- Use the routerLink directive to make the usernames clickable links -->
+          <!-- <a [routerLink]="['/profile', user.id]"> -->
+            <h3>{{ user.username }}</h3>
+          <!-- </a>
+       -->
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+<!-- <app-footer></app-footer> -->

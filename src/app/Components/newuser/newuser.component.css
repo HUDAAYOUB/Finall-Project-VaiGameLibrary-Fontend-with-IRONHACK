@@ -1,0 +1,99 @@
+/* newuser.component.css */
+
+.background-image {
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: -1;
+  }
+  
+  .custom-container {
+    position: absolute;
+    top: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 80%;
+    max-width: 700px;
+    border: 2px solid #3333333a;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background-color: #2c2d3c5a;
+    overflow: hidden;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .form-step {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    gap: 20px;
+    color: #ffd782;
+  }
+  
+  .error-msg {
+    color: red;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 8px;
+  }
+  
+  .mat-button {
+    font-size: 20px;
+    padding: 12px 24px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .nav-link {
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+  }
+  
+  .nav-button {
+    display: inline-block;
+    background: none;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+  }
+  
+  .nav-button img {
+    width: 60px;
+    height: 60px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Stepper styles */
+  .mat-horizontal-stepper-header-container {
+    background-color: #2c2d3c5a;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .mat-horizontal-stepper-header {
+    color: #ffd782;
+  }
+  
+  .mat-horizontal-stepper-header-label {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .mat-horizontal-stepper-header-selected {
+    color: white;
+  }
+  
+  .mat-step-label {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
