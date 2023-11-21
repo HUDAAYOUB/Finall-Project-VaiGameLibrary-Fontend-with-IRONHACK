@@ -1,5 +1,9 @@
 # Game Library Code Project 🎮
 
+[BACKEND](https://github.com/HUDAAYOUB/ProjectGameLibrary-java-project1-github-repo-sda)
+
+
+[Presentation](https://docs.google.com/presentation/d/1pOtnz2Up_9vSgmWEc7ltCHYsu12bgeOR/edit#slide=id.p1)
 ## Overview 🌐
 
 Welcome to the Game Library Code Project! This Java Spring Boot application is designed to manage and organize video game information. Users can create profiles, explore and manage their game collections, and interact with the gaming community.
