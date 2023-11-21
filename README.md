@@ -4,15 +4,26 @@
 
 
 [Presentation](https://docs.google.com/presentation/d/1pOtnz2Up_9vSgmWEc7ltCHYsu12bgeOR/edit#slide=id.p1)
-## Overview 🌐
+
+- [Overview](#overview)
+- [Features](#features)
+
+- [Code Structure](#code-structure)
+- [Components](#components)
+- [Configuration](#configuration)
+- [Contact](#contact)
+- [Resources](#resources)
+- [Installation](#installation)
+
+## Overview:
 
 Welcome to the Game Library Code Project! This Java Spring Boot application is designed to manage and organize video game information. Users can create profiles, explore and manage their game collections, and interact with the gaming community.
 
-## Project Structure 🏗️
+🏗️
+### Components:
+### Code Structure: 
 
 The project is structured into several components, each serving a specific purpose:
-
-### Components:
 
 - **Home Component (`home.component`):**
   - Serves as the focal point for the application's home page.
@@ -21,23 +32,12 @@ The project is structured into several components, each serving a specific purpo
   - Displays a comprehensive list of available games.
   - Offers search and pagination features for user convenience.
 
-- **Create Game Component (`create-game.component`):**
-  - Facilitates the addition of new games to the collection through a user-friendly form.
-
 - **Profile Component (`profile.component`):**
+ - Highlights individual user pages, providing a detailed view of user information.
   - Showcases user profiles and empowers users to manage their game collections effortlessly.
 
 - **Single Games Component (`single-games.component`):**
   - Presents in-depth information about a specific game.
-
-- **User Component (`user.component`):**
-  - Highlights individual user pages, providing a detailed view of user information.
-
-- **Search Component (`search.component`):**
-  - Enables users to perform targeted searches for specific games.
-
-- **User Game Component (`user-game.component`):**
-  - Displays user details along with a list of games associated with that user.
 
 - **New User Component (`new-user.component`):**
   - Facilitates user registration, allowing the creation of new accounts.
@@ -45,16 +45,13 @@ The project is structured into several components, each serving a specific purpo
 - **Add Game Component (`add-game.component`):**
   - Provides a streamlined form for users to add games to their profiles.
 
-- **Sign-In Component (`sign-in.component`):**
-  - Offers a simple and intuitive sign-in form for user authentication.
+- **Sign-In/[Login] Component (`sign-in.component`):**
+  - Offers a simple and intuitive log-in form for user authentication.
 
 ### Additional Components:
 
-- **Navbar Component (`navbar.component`):**
+- **Navbar/Header Component (`navbar.component`):**
   - Enhances navigation with a user-friendly bar for quick access to different sections.
-
-- **Header Component (`header.component`):**
-  - Forms the header section of the application.
 
 - **Footer Component (`footer.component`):**
   - Concludes the application with an informative footer section.
@@ -63,5 +60,24 @@ The project is structured into several components, each serving a specific purpo
 
 1. **Clone the repository:**
 
+
+## Configuration
+
+The project uses a PostgreSQL database, and you may need to configure the database connection details in the application.properties file. Additionally, the project includes validation constraints and error messages for input data, which you can customize if needed.
+
+## Contact
+
+For inquiries and support, please contact [Huda Ayoub] at [huda3ya@gmail.com].
+
+## Resources
+
+- [Wikipedia](https://en.wikipedia.org/)
+- [Code Java](https://www.codejava.net/)
+- [Java T Point](https://www.javatpoint.com/)
+- [Canva](https://www.canva.com/)
+- [ChatGPT](https://www.openai.com/)
+
+##  Installation
+```
    ```bash
    git clone https://github.com/your-username/angular-gaming-app.git
