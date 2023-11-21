@@ -15,7 +15,7 @@
 
 ## Overview:
 
-Welcome to the Game Library Code Project! This Java Spring Boot application is designed to manage and organize video game information. Users can create profiles, explore and manage their game collections, and interact with the gaming community.
+Welcome to the VAI Game Library Code Project! This Angular application is designed to manage and organize video game information. Users can create profiles, explore and manage their game collections, and interact with the gaming community.
 
 🏗️
 ### Code Structure-Components: 
