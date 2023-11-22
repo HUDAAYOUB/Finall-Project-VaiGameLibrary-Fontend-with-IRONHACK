@@ -9,6 +9,7 @@
 - [Features](#features)
 - [Code Structure-Components](#code-structure-components)
 - [Configuration](#configuration)
+- [UML](#uml)
 - [Contact](#contact)
 - [Resources](#resources)
 - [Installation](#installation)
@@ -88,6 +89,12 @@ The project is structured into several components, each serving a specific purpo
 
 The project uses a PostgreSQL database, and you may need to configure the database connection details in the application.properties file. Additionally, the project includes validation constraints and error messages for input data, which you can customize if needed.
 
+## UML
+
+ <img src = "https://github.com/HUDAAYOUB/Finall-Project-VaiGameLibrary-Fontend-with-IRONHACK/blob/main/Screenshot%202023-11-22%20095423.png" >
+
+
+ 
 ## Contact
 
 For inquiries and support, please contact [Huda Ayoub] at [huda3ya@gmail.com].
