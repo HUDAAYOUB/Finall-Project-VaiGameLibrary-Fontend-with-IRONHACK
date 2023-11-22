@@ -87,7 +87,7 @@ The project is structured into several components, each serving a specific purpo
 
 ## Configuration
 
-The project uses a PostgreSQL database, and you may need to configure the database connection details in the application.properties file. Additionally, the project includes validation constraints and error messages for input data, which you can customize if needed.
+The project uses a database, and you may need to configure the database connection details in the application.properties file. Additionally, the project includes validation constraints and error messages for input data, which you can customize if needed.
 
 ## UML
 
