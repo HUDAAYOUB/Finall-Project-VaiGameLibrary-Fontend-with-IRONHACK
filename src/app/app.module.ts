@@ -26,7 +26,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSliderModule } from '@angular/material/slider';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SignInComponent } from './Components/sign-in/sign-in.component'; 
-import { NgxPaginationModule } from 'ngx-pagination';
+//import { NgxPaginationModule } from 'ngx-pagination';
 import { MatButtonModule } from '@angular/material/button';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
@@ -68,7 +68,7 @@ import { AddGameComponent } from './Components/add-game/add-game.component';
     MatSliderModule,
     FormsModule, 
     ReactiveFormsModule,
-    NgxPaginationModule,
+   // NgxPaginationModule,
     MatButtonModule,
     MatStepperModule,
     MatSnackBarModule,
