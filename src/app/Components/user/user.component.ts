@@ -31,3 +31,4 @@ export class UserComponent implements OnInit {
     this.router.navigate(['/profile', userId]);
   }
 }
+// not important

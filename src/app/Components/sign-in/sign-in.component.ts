@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/Service/auth.service';
-
+// meant to be login
 @Component({
   selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',
@@ -64,16 +64,7 @@ export class SignInComponent implements OnInit {
 
           this.verify();
 
-          // Reset the form after successful login
-          //this.loginForm.reset();
 
-
-
-          // Use Router to navigate to the home route
-//          this.router.navigate(["/"]).then(() => {
-            // Reload the page after navigating
-            //window.location.reload();
-          //});
         },
         error: (error) => {
           console.log(error, error.status);
