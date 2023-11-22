@@ -1,28 +1,80 @@
-# FinalProject
+# Game Library Code Project 🎮
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
+[BACKEND](https://github.com/HUDAAYOUB/ProjectGameLibrary-java-project1-github-repo-sda)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+[Presentation](https://docs.google.com/presentation/d/1pOtnz2Up_9vSgmWEc7ltCHYsu12bgeOR/edit#slide=id.p1)
 
-## Code scaffolding
+- [Overview](#overview)
+- [Features](#features)
+- [Code Structure-Components](#code-structure-components)
+- [Configuration](#configuration)
+- [Contact](#contact)
+- [Resources](#resources)
+- [Installation](#installation)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Overview:
 
-## Build
+Welcome to the VAI Game Library Code Project! This Angular application is designed to manage and organize video game information. Users can create profiles, explore and manage their game collections, and interact with the gaming community.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+🏗️
+### Code Structure-Components: 
 
-## Running unit tests
+The project is structured into several components, each serving a specific purpose:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Home Component (`home.component`):**
+  - Serves as the focal point for the application's home page.
 
-## Running end-to-end tests
+- **Games Component (`games.component`):**
+  - Displays a comprehensive list of available games.
+  - Offers search and pagination features for user convenience.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **Profile Component (`profile.component`):**
+ - Highlights individual user pages, providing a detailed view of user information.
+  - Showcases user profiles and empowers users to manage their game collections effortlessly.
 
-## Further help
+- **Single Games Component (`single-games.component`):**
+  - Presents in-depth information about a specific game.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# Finall-Project-VaiGameLibrary-Fontend-with-IRONHACK
+- **New User Component (`new-user.component`):**
+  - Facilitates user registration, allowing the creation of new accounts.
+
+- **Add Game Component (`add-game.component`):**
+  - Provides a streamlined form for users to add games to their profiles.
+
+- **Sign-In/[Login] Component (`sign-in.component`):**
+  - Offers a simple and intuitive log-in form for user authentication.
+
+### Additional Components:
+
+- **Navbar/Header Component (`navbar.component`):**
+  - Enhances navigation with a user-friendly bar for quick access to different sections.
+
+- **Footer Component (`footer.component`):**
+  - Concludes the application with an informative footer section.
+
+## Installation 🚀
+
+1. **Clone the repository:**
+
+
+## Configuration
+
+The project uses a PostgreSQL database, and you may need to configure the database connection details in the application.properties file. Additionally, the project includes validation constraints and error messages for input data, which you can customize if needed.
+
+## Contact
+
+For inquiries and support, please contact [Huda Ayoub] at [huda3ya@gmail.com].
+
+## Resources
+
+- [Wikipedia](https://en.wikipedia.org/)
+- [Code Java](https://www.codejava.net/)
+- [Java T Point](https://www.javatpoint.com/)
+- [Canva](https://www.canva.com/)
+- [ChatGPT](https://www.openai.com/)
+
+##  Installation
+```
+   ```bash
+   git clone https://github.com/HUDAAYOUB/Finall-Project-VaiGameLibrary-Fontend-with-IRONHACK.git
