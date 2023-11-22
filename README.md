@@ -17,6 +17,32 @@
 
 Welcome to the VAI Game Library Code Project! This Angular application is designed to manage and organize video game information. Users can create profiles, explore and manage their game collections, and interact with the gaming community.
 
+
+### Features:
+
+1. **User Profiles:**
+   - Users can create profiles.
+   - Individual user pages are available, showcasing detailed user information.
+
+2. **Game Management:**
+   - Users can explore and manage their game collections.
+   - A comprehensive list of available games is displayed.
+   - Users can add new games to their profiles.
+
+3. **Community Interaction:**
+   - Users can interact with the gaming community.
+
+4. **Authentication:**
+   - The application includes a sign-in/login component for user authentication.
+
+5. **Navigation:**
+   - Navbar/Header component enhances navigation.
+
+6. **Pagination and Search:**
+   - Games component offers pagination features for large lists.
+   - Search functionality is available for user convenience.
+
+
 🏗️
 ### Code Structure-Components: 
 
